@@ -1,2 +1,5 @@
 # physics_project
-Computational Physics projects done for 8.16 (MIT Data Science in Physics)
+Computational Physics projects
+1. Gravitational Wave detection
+2. Measuring weak mixing angle by measuring the mass of W and Z boson
+
