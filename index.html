@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Projects - MIT Data Science for Physics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-bg: #ecf0f1;
+            --dark-text: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .project-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .project-card .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .project-card .card-body {
+            padding: 2rem;
+        }
+
+        .project-card .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-card .card-text {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-primary {
+            background: var(--secondary-color);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-primary {
+            border-color: var(--secondary-color);
+            color: var(--secondary-color);
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-primary:hover {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--primary-color);
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .tech-stack {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+
+        .tech-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .tech-item i {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .tech-item h4 {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .project-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <i class="fas fa-atom project-icon"></i>
+                    <h1>Physics Projects</h1>
+                    <p>Exploring the frontiers of physics through computational analysis and data science</p>
+                    <p class="mb-4"><strong>MIT Data Science for Physics Class</strong></p>
+                    <a href="#projects" class="btn btn-outline-light btn-lg">Explore Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <p>Advanced computational physics projects combining theoretical understanding with practical data analysis</p>
+            </div>
+            
+            <div class="row">
+                <!-- Project 1: Gravitational Wave Detection -->
+                <div class="col-lg-6">
+                    <div class="card project-card">
+                        <div class="card-img-top d-flex align-items-center justify-content-center">
+                            <i class="fas fa-wave-square text-white" style="font-size: 4rem;"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Gravitational Wave Detection</h5>
+                            <p class="card-text">
+                                Advanced signal processing and analysis of LIGO data to detect gravitational wave signals 
+                                within noisy datasets. This project implements sophisticated algorithms for signal 
+                                identification and waveform fitting.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">Signal Processing</span>
+                                <span class="badge bg-secondary me-2">LIGO Data</span>
+                                <span class="badge bg-info me-2">Python</span>
+                                <span class="badge bg-success">Data Analysis</span>
+                            </div>
+                            <a href="projects/gravitational-waves.html" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Weak Mixing Angle Measurement -->
+                <div class="col-lg-6">
+                    <div class="card project-card">
+                        <div class="card-img-top d-flex align-items-center justify-content-center">
+                            <i class="fas fa-atom text-white" style="font-size: 4rem;"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Weak Mixing Angle Measurement</h5>
+                            <p class="card-text">
+                                Analysis of W and Z boson production in LHC collisions to measure the weak mixing angle 
+                                (sin²θw). This project explores particle physics through jet analysis and statistical methods.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">Particle Physics</span>
+                                <span class="badge bg-secondary me-2">LHC Data</span>
+                                <span class="badge bg-info me-2">ROOT</span>
+                                <span class="badge bg-success">Statistical Analysis</span>
+                            </div>
+                            <a href="projects/weak-mixing-angle.html" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technologies & Tools</h2>
+                <p>Advanced computational tools and frameworks used in these physics projects</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="tech-item">
+                        <i class="fab fa-python"></i>
+                        <h4>Python</h4>
+                        <p>Data analysis and scientific computing</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tech-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>ROOT</h4>
+                        <p>High energy physics data analysis</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <h4>LIGO Data</h4>
+                        <p>Gravitational wave observations</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tech-item">
+                        <i class="fas fa-cogs"></i>
+                        <h4>LHC Data</h4>
+                        <p>Particle collision data analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">About These Projects</h2>
+                    <p class="lead">
+                        These projects represent advanced computational physics work completed for MIT's Data Science for Physics course. 
+                        Each project combines theoretical physics understanding with practical data analysis skills, 
+                        demonstrating the power of computational methods in modern physics research.
+                    </p>
+                    <p>
+                        The projects showcase expertise in signal processing, statistical analysis, particle physics, 
+                        and gravitational wave detection - key areas in contemporary physics research.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h4>Physics Projects Portfolio</h4>
+                    <p>MIT Data Science for Physics Class</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p class="mt-3 mb-0">&copy; 2024 Physics Projects. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
