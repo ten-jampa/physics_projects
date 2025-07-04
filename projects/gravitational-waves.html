@@ -166,6 +166,51 @@
             text-align: center;
         }
 
+        /* Image styling for uniform display */
+        .plot-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .plot-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plot-image:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .result-visualization {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .result-visualization:hover {
+            transform: translateY(-3px);
+        }
+
+        .result-visualization h5 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .result-visualization p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
         @media (max-width: 768px) {
             .hero-section h1 {
                 font-size: 2.5rem;
@@ -329,7 +374,7 @@
 
                     <div class="result-card">
                         <h5><i class="fas fa-chart-bar text-primary me-2"></i>Accurate Waveform Fitting</h5>
-                        <p>The fitted analytical functions closely followed the observed data, confirming the presence of structured waveforms indicative of gravitational waves.</p>
+                        <p>The fitted analytical functions closely followed the observed data with χ² ≈ 0.78, confirming the presence of structured waveforms indicative of gravitational waves.</p>
                     </div>
 
                     <div class="result-card">
@@ -350,46 +395,46 @@
     <section class="content-section" style="background: var(--light-bg);">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <h2 class="text-center mb-5">Visual Results</h2>
                     
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 mb-4">
                             <div class="result-visualization">
                                 <div class="plot-container">
                                     <img src="../images/strain_time.png" alt="Time-Series Strain Data" class="plot-image">
-                                    <h5 class="mt-3">Time-Series Strain Data</h5>
-                                    <p class="text-muted">Raw LIGO detector data showing the gravitational wave signal at ~16 seconds</p>
+                                    <h5>Time-Series Strain Data</h5>
+                                    <p>Raw LIGO detector data showing the gravitational wave signal at ~16 seconds</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-md-6 mb-4">
+                        <div class="col-lg-8 mb-4">
                             <div class="result-visualization">
                                 <div class="plot-container">
                                     <img src="../images/q_transform.png" alt="Q-Transform Analysis" class="plot-image">
-                                    <h5 class="mt-3">Q-Transform Analysis</h5>
-                                    <p class="text-muted">Time-frequency representation showing the chirp signal evolution</p>
+                                    <h5>Q-Transform Analysis</h5>
+                                    <p>Time-frequency representation showing the chirp signal evolution</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-md-6 mb-4">
+                        <div class="col-lg-8 mb-4">
                             <div class="result-visualization">
                                 <div class="plot-container">
                                     <img src="../images/strain(whitened)_time.png" alt="Whitened Strain Data" class="plot-image">
-                                    <h5 class="mt-3">Whitened Strain Data</h5>
-                                    <p class="text-muted">Whitened strain data showing improved signal-to-noise ratio after processing</p>
+                                    <h5>Whitened Strain Data</h5>
+                                    <p>Whitened strain data showing improved signal-to-noise ratio after processing</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-md-6 mb-4">
+                        <div class="col-lg-8 mb-4">
                             <div class="result-visualization">
                                 <div class="plot-container">
                                     <img src="../images/fitted_timeseries.png" alt="Chi-Square Fitting Results" class="plot-image">
-                                    <h5 class="mt-3">Chi-Square Fitting Results</h5>
-                                    <p class="text-muted">Analytical function fitted to data with statistical validation (χ² ≈ 0.78)</p>
+                                    <h5>Chi-Square Fitting Results</h5>
+                                    <p>Analytical function fitted to data with statistical validation (χ² ≈ 0.78)</p>
                                 </div>
                             </div>
                         </div>
