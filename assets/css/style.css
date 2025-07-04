@@ -188,4 +188,37 @@
 
 .project-metrics i {
     color: var(--primary-color);
+}
+
+/* Plot Images */
+.plot-container {
+    padding: 1rem;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.plot-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.plot-image:hover {
+    transform: scale(1.02);
+}
+
+.plot-container h5 {
+    color: var(--dark-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.plot-container p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 0;
 } 
