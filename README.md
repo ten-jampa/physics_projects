@@ -45,7 +45,7 @@ This repository contains two major computational physics projects that demonstra
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/[your-username]/physics_projects.git
+   git clone https://github.com/[ten-jampa]/physics_projects.git
    cd physics_projects
    ```
 
