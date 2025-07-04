@@ -4,7 +4,7 @@ Advanced computational physics projects completed for MIT's Data Science for Phy
 
 ## 🌐 Live Website
 
-Visit the interactive portfolio: **[Physics Projects GitHub Pages](https://[ten-jampa].github.io/physics_projects/)**
+Visit the interactive portfolio: **[Physics Projects GitHub Pages](https://ten-jampa.github.io/physics_projects/)**
 
 ## 📋 Project Overview
 
@@ -45,7 +45,7 @@ This repository contains two major computational physics projects that demonstra
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/[ten-jampa]/physics_projects.git
+   git clone https://github.com/ten-jampa/physics_projects.git
    cd physics_projects
    ```
 
