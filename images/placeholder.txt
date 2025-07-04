@@ -1,0 +1,16 @@
+This directory will contain project images and plots.
+
+For Gravitational Wave Detection:
+- gw_strain_plot.png (Time-series strain data)
+- gw_frequency_plot.png (Frequency domain analysis)
+- gw_qtransform_plot.png (Q-transform visualization)
+- gw_fit_results.png (Chi-square fitting results)
+
+For Weak Mixing Angle:
+- wma_jet_mass.png (Jet mass distributions)
+- wma_w_peak.png (W boson mass peak)
+- wma_z_peak.png (Z boson mass peak)
+- wma_background.png (Background vs signal)
+
+Note: These are placeholder descriptions. In a real implementation, 
+you would extract actual plots from the Jupyter notebooks. 
